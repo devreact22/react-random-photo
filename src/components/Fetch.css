@@ -1,3 +1,9 @@
+.main{
+    width: 750px;
+
+}
+
+
 .photos-container {
     display: flex;
     flex-wrap: wrap;

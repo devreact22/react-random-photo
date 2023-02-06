@@ -36,7 +36,7 @@ function RandomPhotos() {
   };
 
   return (
-    <div className='' >
+    <div className='main' >
       <div className='butt1' >
       <div className="form-check form-switch">
       <input  

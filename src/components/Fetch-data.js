@@ -32,8 +32,8 @@ function RandomPhotos() {
   };
 
   return (
-    <div className='p-20' >
-      <div >
+    <div className='' >
+      <div className='butt1' >
       <label  htmlFor="grayscale-toggle">Grayscale: </label>
       <input
         type="checkbox"
@@ -58,10 +58,13 @@ function RandomPhotos() {
                 className="photo"
                 style={{ filter: isGrayscale ? 'grayscale(100%)' : 'none' }}
               />
+              
             ))}
         </div>
       )}
+      <div className='butt2'>
       <button type="button" className="btn btn-info " onClick={handleLoadMorePhotos}>Load More Photos</button>
+      </div>
     </div>
   );
 }

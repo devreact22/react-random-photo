@@ -38,15 +38,17 @@ function RandomPhotos() {
   return (
     <div className='' >
       <div className='butt1' >
-      <label  htmlFor="grayscale-toggle">Grayscale: 
-      <input
+      <div className="form-check form-switch">
+      <input  
         type="checkbox"
+        className="form-check-input"
+        role="switch"
         id="grayscale-toggle"
         checked={isGrayscale}
         onChange={() => setIsGrayscale(!isGrayscale)}
       />
-      <span class="slider round"/>
-      </label>
+       <label htmlFor="grayscale-toggle">:Grayscale </label>
+      </div>
       <button type="button" className="btn btn-primary" onClick={handleFetchNewPhotos}>Fetch New Photos</button>
       </div>
       {isLoading ? (

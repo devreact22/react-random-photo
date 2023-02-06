@@ -51,6 +51,7 @@ function RandomPhotos() {
       </div>
       <button type="button" className="btn btn-primary" onClick={handleFetchNewPhotos}>Fetch New Photos</button>
       </div>
+
       {isLoading ? (
         <div class="spinner-border text-primary"></div>
       ) : (

@@ -6,9 +6,10 @@
   }
   
   .photo {
-    width:100%;
+    width: 100%;
     margin: 5px;
     border-radius: 8px; 
+    display: flex;
   }
 
   .photo-with-text {

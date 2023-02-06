@@ -57,19 +57,20 @@ function RandomPhotos() {
             .sort(() => 0.5 - Math.random())
             .slice(0, visiblePhotos)
             .map(photo => (
+              <div key={photo.id} className="photo-with-text">
               <img
-                key={photo.id}
                 src={`https://picsum.photos/id/${photo.id}/300/300`}
                 alt={photo.author}
                 className="photo"
                 style={{ filter: isGrayscale ? 'grayscale(100%)' : 'none' }}
               />
-              
+              <div className="photo-text">{photo.author}</div>
+              </div>
             ))}
         </div>
       )}
       <div className='butt2'>
-      <button type="button" className="btn btn-info " onClick={handleLoadMorePhotos}>Load More Photos</button>
+      <button type="button" className="btn btn-info" onClick={handleLoadMorePhotos}>Load More Photos</button>
       </div>
     </div>
   );

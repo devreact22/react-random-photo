@@ -2,25 +2,31 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 750px;
+    justify-content: center;
   }
   
   .photo {
-    width: calc(50% - 10px);
+    width: 100%;
     margin: 5px;
     border-radius: 8px; 
+  
   }
 
   .photo-with-text {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     margin: 10px;
   }
 
   .photo-text {
     position: absolute;
+    padding: 6px;
     bottom: 8px;
     left: 16px;
+    background: black;
+    opacity: 4;
+    border-radius: 8px; 
   }
 
   .butt1{

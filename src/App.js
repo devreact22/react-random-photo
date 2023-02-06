@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <div className="App-header">
         <h1>
-          Random photo App
+          RANDOM PHOTO APP
         </h1> 
         <RandomPhotos />   
         </div>

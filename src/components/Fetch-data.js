@@ -14,6 +14,7 @@ function RandomPhotos() {
       setTimeout(async () => {
         const response = await fetch('https://picsum.photos/v2/list');
         const data = await response.json();
+        console.log(data);
         setPhotos(data);
         setIsLoading(false);
       }, 1000);
